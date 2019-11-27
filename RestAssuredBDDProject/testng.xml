@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="EmployeesRestAPISuite">
+<listeners>
+	<listener class-name="com.employeeapi.utilities.Listeners" />
+</listeners>
+	<test thread-count="5" name="EmployeesRestAPITest">
+		<classes>
+			<class name="restAssuredTests.Demo1_GET_Request" />
+			<class name="restAssuredTests.Demo2_POST_Request" />
+			<class name="restAssuredTests.Demo3_PUT_Request" />
+			<class name="restAssuredTests.Demo4_DELETE_Request" />
+			<class name="restAssuredTests.Demo1_GET_Request" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
